@@ -64,3 +64,15 @@ print('解包的元组: ', ele_1, ele2, ele_3, ele_4)
 # 实现原理:
 # _ = (10, 20) # 通过元组进行打包
 # x, y = _ # 通过元组进行解包
+
+# 11. 改变元组内元素的方式
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+
+tuple_change = (list1, list2)
+print('元组内的数组: ', tuple_change)
+
+tuple_change[0][0] = 'look!'
+print('改变元组内的数组: ', tuple_change)
+
+# 其原理是元组内列表的引用并没有改变，元组是不可变的，但是列表是可变的，所以元组内的列表依旧是可变的
