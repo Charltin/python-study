@@ -19,7 +19,7 @@ print(x, 'removeprefix:', x.removeprefix('Maddest'))
 print(x, 'removesuffix:', x.removesuffix('hatters'))
 print()
 
-# 2. 拆分和拼接
+# 2. 拆分
 x = 'Maddest of hatters'
 
 # 2.1 partition 根据分隔符拆分成三元组
@@ -39,3 +39,15 @@ print(x, 'rsplit:', x.rsplit(' ', 1))
 x = 'Welcome\nto\r\nwonderland'
 print(x)
 print('splitlines:', x.splitlines())
+print('splitlines:', x.splitlines(True))  # 包括换行符
+
+# 3. 拼接
+list_join = ['welcome', 'to', 'wonderland']
+tuple_join = ('Forest', 'cottages', 'castles', 'cards that can talk')
+
+# 3.1 join
+print(' '.join(list_join))
+print(' and '.join(tuple_join))
+
+# 拼接两个字符串 'welcome' -> 'welcomewelcome' 用join拼接的效率比用加法拼接高
+''.join(['welcome', 'welcome'])
