@@ -73,12 +73,14 @@ format_5 = 'Me llamo {name}, {age} anos'.format(name='Bayes', age='ventidos')
 print('format关键字索引: ', format_5)
 print()
 
-# 3.3 f-string
+# 3.3 f-string Python 3.6中新增
+# f-string 支持format中的参数
 name = 'Bayes'
 age = 'ventidos'
 
-intro = f'Me llamo {name}, {age} anos'
-print('f-string: ', intro)
+print('f-string: ', f'Me llamo {name}, {age} anos')
+print(f'{123456789:^020}')
+print(f'{123456789.626:_.2f}')
 print()
 
 # 3.4 来自C语言的%方式
