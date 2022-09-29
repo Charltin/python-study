@@ -78,3 +78,8 @@ print('e & E: ''{:e} {:E}'.format(8, 8))
 print('f & F: ''{:f} {:F}'.format(8.132432, 8.132432))
 print('g & G: ''{:g} {:G}'.format(8324123414.14234, 8321341234214.14234))
 print('%: ''{:.2%}'.format(12.432679))
+print()
+
+# 8. 关键字传入参数
+print('prec: ''{:.{prec}f}'.format(3.1415926, prec=4))
+print('{:{fill}{align}{width}{grouping_option}.{prec}{type}}'.format(64198323.141592, fill='+', align='^', width=20, grouping_option='_', prec=6, type='g'))
