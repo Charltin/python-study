@@ -83,3 +83,4 @@ print()
 # 8. 关键字传入参数
 print('prec: ''{:.{prec}f}'.format(3.1415926, prec=4))
 print('{:{fill}{align}{width}{grouping_option}.{prec}{type}}'.format(64198323.141592, fill='+', align='^', width=20, grouping_option='_', prec=6, type='g'))
+
